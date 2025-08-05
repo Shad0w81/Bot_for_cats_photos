@@ -17,7 +17,7 @@ def start(message):
 @bot.message_handler()
 def base(message):
     markup = telebot.types.InlineKeyboardMarkup(row_width=1)
-    btn1 = telebot.types.InlineKeyboardButton('Нажми Tap here!', callback_data='restart')
+    btn1 = telebot.types.InlineKeyboardButton('Tap here!', callback_data='restart')
     markup.add(btn1)
     bot.send_message(message.chat.id, 'Type /start or click the button below!', reply_markup=markup)
 

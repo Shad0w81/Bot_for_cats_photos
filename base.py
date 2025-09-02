@@ -28,4 +28,3 @@ def restart_callback(call):
 if __name__ == "__main__":
     print('Bot launched')
     bot.polling(none_stop=True)
-  
